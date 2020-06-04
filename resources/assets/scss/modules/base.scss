@@ -1,0 +1,59 @@
+.firstPage__mouse{
+    z-index: 0;
+    position: absolute;
+    right: calc(50% - 50px);
+    bottom: 100px;
+    content: "";
+    width: 50px;
+    height: 70px;
+    background-image: $image-mouse-black;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: $desktopWidth) {
+        width: 36px;
+        height: 50px;
+        bottom: 60px;
+    }
+    @media screen and (max-width: $smDesktopWidth) {
+        width: 29px;
+        height: 40px;
+    }
+    @media screen and (max-width: $noSliderDesktopWidth) {
+        display: none;
+    }
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 117px;
+    @media screen and (max-width: $bigDesktopWidth) {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    @media screen and (max-width: $desktopWidth) {
+        font-size: 48px;
+        line-height: 56px;
+    }
+    @media screen and (max-width: $smDesktopWidth) {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+section{
+    @media screen and (max-width: $noSliderDesktopWidth) {
+        margin-bottom: 80px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+        margin-bottom: 60px;
+    }
+    @media screen and (max-width: $smPhoneWidth) {
+        margin-bottom: 40px;
+    }
+}

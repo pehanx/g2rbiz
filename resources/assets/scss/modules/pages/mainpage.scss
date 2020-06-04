@@ -1,0 +1,596 @@
+.mainPageHero{
+    margin-bottom: 150px;
+    height: calc(100% - 150px);
+
+    @media screen and (max-width: $bigDesktopWidth) {
+        margin-bottom: 60px;
+        height: calc(100% - 60px);
+    }
+    @media screen and (max-width: $noSliderDesktopWidth) {
+        height: 568px;
+    }
+    @media screen and (max-width: $tableWidth) {
+        height: 550px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+        height: 290px;
+        margin-bottom: 40px;
+    }
+
+
+    &::after {
+        content: "";
+        background-repeat: no-repeat;
+        background-image: $image-mainpageHero;
+        background-size: cover;
+        background-position: 40%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        @media screen and (max-width: $bigDesktopWidth) {
+            background-position: 50%;
+        }
+        @media screen and (max-width: $tableWidth) {
+            background-position: 40%;
+        }
+    }
+    &::before{
+        z-index: 0;
+        position: absolute;
+        right: -1px;
+        bottom: -2px;
+        content: "";
+        width:  716px;
+        height: 511px;
+        background-image: $shape-white;
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media screen and (max-width: $bigDesktopWidth) {
+            width: 548px;
+            height: 391px;
+        }
+        @media screen and (max-width: $desktopWidth) {
+            width: 339px;
+            height: 242px;
+        }
+        @media screen and (max-width: $smDesktopWidth) {
+            width: 290px;
+            height: 207px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            width: 150px;
+            height: 107px;
+        }
+    }
+
+    &__mouse{
+        bottom: 50px;
+        background-image: $image-mouse-white;
+
+        @media screen and (max-width: $smDesktopWidth) {
+            bottom: 40px;
+        }
+    }
+
+    .container {
+        height: calc(100% + 150px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 180px;
+        position: absolute;
+        @media screen and (max-width: $bigDesktopWidth) {
+            height: calc(100% + 60px);
+            padding: 0 100px;
+        }
+        @media screen and (max-width: $noSliderDesktopWidth) {
+            height: 100%;
+            padding: 0 15px;
+        }
+        @media screen and (max-width: $tableWidth) {
+            padding: 0 15px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            padding: 0 18px;
+        }
+    }
+
+    &__text{
+        width: 1389px;
+        @media screen and (max-width: $bigDesktopWidth) {
+            width: 891px;
+        }
+        @media screen and (max-width: $desktopWidth) {
+            width: 590px;
+        }
+        @media screen and (max-width: $smDesktopWidth) {
+            width: 446px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            max-width: 270px;
+            width: 100%;
+        }
+        h2{
+            font-weight: bold;
+            font-size: 150px;
+            line-height: 165px;
+            color: $color-white;
+            @media screen and (max-width: $bigDesktopWidth) {
+                font-size: 96px;
+                line-height: 106px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                font-size: 64px;
+                line-height: 70px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                font-size: 48px;
+                line-height: 53px;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                font-size: 28px;
+                line-height: 31px;
+            }
+        }
+    }
+}
+
+.mainPageBlock1{
+    .container{
+        padding: 250px 180px 150px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        @media screen and (max-width: $bigDesktopWidth) {
+            padding: 160px 100px 60px;
+        }
+        @media screen and (max-width: $desktopWidth) {
+            padding-top: 120px;
+        }
+        @media screen and (max-width: $laptopWidth) {
+            padding-top: 100px;
+        }
+        @media screen and (max-width: $noSliderDesktopWidth) {
+            padding: 0 15px;
+        }
+        @media screen and (max-width: $tableWidth) {
+            padding: 0 15px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            padding: 0 18px;
+        }
+    }
+
+    &__firstBlock{
+        margin-bottom: 102px;
+        @media screen and (max-width: $bigDesktopWidth) {
+            margin-bottom: 74px;
+        }
+        @media screen and (max-width: $desktopWidth) {
+            margin-bottom: 44px;
+        }
+        @media screen and (max-width: $smDesktopWidth) {
+            margin-bottom: 38px;
+        }
+        @media screen and (max-width: $tableWidth) {
+            margin-bottom: 30px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            margin-bottom: 20px;
+        }
+
+        &__title{
+            margin-bottom: 15px;
+            @media screen and (max-width: $smDesktopWidth) {
+                margin-bottom: 10px;
+            }
+        }
+        &__text{
+            width: 866px;
+            font-size: 36px;
+            line-height: 40px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                width: 436px;
+                font-size: 22px;
+                line-height: 24px;
+            }
+            @media screen and (max-width: $desktopWidth ) {
+                font-size: 18px;
+                line-height: 20px;
+            }
+            @media screen and (max-width: $smDesktopWidth ) {
+                max-width: 409px;
+                width: 100%;
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+    &__link{
+        height: 100px;
+        border: 3px solid $color-text;
+        background-color: $color-white;
+        border-radius: 15px;
+        font-size: 36px;
+        line-height: 47px;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        width: max-content;
+        transition: .4s;
+
+        @media screen and (max-width: $bigDesktopWidth) {
+            height: 69px;
+            font-size: 22px;
+            line-height: 29px;
+            padding: 0 25px;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: $desktopWidth ) {
+            height: 55px;
+            border-width: 2px;
+            font-size: 18px;
+            line-height: 23px;
+            padding: 0 20px;
+        }
+        @media screen and (max-width: $laptopWidth) {
+            height: 41px;
+            border-width: 1px;
+            border-radius: 7px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+        @media screen and (max-width: $smDesktopWidth ) {
+            height: 41px;
+            border-width: 1px;
+            border-radius: 7px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 20px;
+            @media screen and (max-width: $bigDesktopWidth) {
+                margin-bottom: 15px;
+            }
+        }
+        &:hover{
+            color: $color-white;
+        }
+        &-asiaoptom:hover {
+            background-color: $color-asiaoptom;
+            border-color: $color-asiaoptom;
+        }
+        &-g2rmachine:hover{
+            background-color: $color-g2rmachine;
+            border-color: $color-g2rmachine;
+        }
+        &-g2rlogistics:hover{
+            background-color: $color-g2rlogistics;
+            border-color: $color-g2rlogistics;
+        }
+        &-g2rexport:hover{
+            background-color: $color-g2rexport;
+            border-color: $color-g2rexport;
+        }
+        &-g2rmarket:hover{
+            background-color: $color-g2rmarket;
+            border-color: $color-g2rmarket;
+        }
+        &-printural:hover{
+            background-color: $color-printural;
+            border-color: $color-printural;
+        }
+    }
+
+    &__image{
+        opacity: 0;
+        transition: .3s;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        margin-left: 15px;
+        width: 1100px;
+        height: 860px;
+
+        @media screen and (max-width: $bigDesktopWidth ) {
+            right: 100px;
+            bottom: 60px;
+            width: 854px;
+            height: 604px;
+        }
+        @media screen and (max-width: $desktopWidth ) {
+            width: 615px;
+            height: 430px;
+        }
+        @media screen and (max-width: $smDesktopWidth ) {
+            width: 370px;
+            height: 290px;
+        }
+
+        &-show{
+            opacity: 1;
+        }
+    }
+
+    &__blocks{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item{
+        border: 1px solid $border-blocks-company;
+        border-radius: 10px;
+        padding: 20px 15px;
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media screen and (max-width: $phoneWidth ) {
+            width: 100%;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__title{
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: 15px;
+            word-break: break-word;
+        }
+        &__link{
+            display: block;
+            font-size: 16px;
+            line-height: 21px;
+            color: $color-link;
+            transition: .4s;
+            margin-bottom: 15px;
+
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+        &__image{
+            width: 240px;
+            max-width: 100%;
+            height: 160px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom left;
+
+
+            @media screen and (max-width: $phoneWidth ) {
+                width: 230px;
+                height: 163px;
+            }
+        }
+    }
+}
+
+.mainPageTeam{
+    .container{
+        padding: 100px 180px 150px;
+        display: flex;
+
+        @media screen and (max-width: $bigDesktopWidth ) {
+            padding:100px 60px;
+        }
+        @media screen and (max-width: $bigDesktopWidth ) {
+            padding:100px 60px;
+        }
+        @media screen and (max-width: $laptopWidth) {
+            padding-top: 40px;
+        }
+        @media screen and (max-width: $noSliderDesktopWidth) {
+            padding: 40px 15px;
+        }
+        @media screen and (max-width: $tableWidth) {
+            padding: 40px 15px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+    &__left{
+        margin-right: 250px;
+
+        @media screen and (max-width: $TVWidth-bigDesktopWidth) {
+            margin-right: 225px;
+        }
+        @media screen and (max-width: $bigDesktopWidth ) {
+            margin-right: 200px;
+        }
+        @media screen and (max-width: $bigDesktopWidth-desktopWidth  ) {
+            margin-right: 175px;
+        }
+        @media screen and (max-width: $desktopWidth ) {
+            margin-right: 150px;
+        }
+        @media screen and (max-width: $laptopWidth) {
+            margin-right: 125px;
+        }
+        @media screen and (max-width: $smDesktopWidth ) {
+            margin-right: 100px;
+        }
+        @media screen and (max-width: $smDesktopWidth-tableWidth ) {
+            margin-right: 75px;
+        }
+    }
+    &__right{
+        width: 1300px;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        @media screen and (max-width: $TVWidth-bigDesktopWidth) {
+            width: 1178.5px;
+        }
+        @media screen and (max-width: $bigDesktopWidth ) {
+            width: 1057px;
+        }
+        @media screen and (max-width: $bigDesktopWidth-desktopWidth  ) {
+            width: 893.5px;
+        }
+        @media screen and (max-width: $desktopWidth ) {
+            width: 730px;
+        }
+        @media screen and (max-width: $desktopWidth-smDesktopWidth   ) {
+            width:640px;
+        }
+        @media screen and (max-width: $smDesktopWidth ) {
+            width: 550px;
+        }
+        @media screen and (max-width: $smDesktopWidth-tableWidth ) {
+            width:472px
+        }
+    }
+    &__title{
+        margin-top: 150px;
+        margin-bottom: 35px;
+
+        @media screen and (max-width: $bigDesktopWidth ) {
+            margin-top: 100px;
+        }
+        @media screen and (max-width: $desktopWidth ) {
+            margin-top: 60px;
+        }
+        @media screen and (max-width: $tableWidth ) {
+            margin-top: 0;
+        }
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__photo{
+        width: max-content;
+        margin: 0 auto;
+
+        @media screen and (max-width: $tableWidth) {
+            margin-bottom: 37px;
+        }
+
+        @media screen and (max-width: $phoneWidth) {
+            margin: 0 0 20px;
+            width: 50%;
+        }
+        &-fullwidth{
+            @media screen and (max-width: $phoneWidth) {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+        &-fullwidth &__area{
+            @media screen and (max-width: $phoneWidth) {
+                margin-left: 0;
+            }
+        }
+        &-fullwidth &__name,
+        &-fullwidth &__jobs{
+            @media screen and (max-width: $phoneWidth) {
+                width: 144px;
+            }
+            @media screen and (max-width: $smPhoneWidth) {
+                width: 132px;
+            }
+        }
+        &__area{
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin: 0 auto;
+            width: 346px;
+            height: 511px;
+
+            @media screen and (max-width: $TVWidth-bigDesktopWidth) {
+                width: 291.5px;
+                height: 430.5px;
+            }
+            @media screen and (max-width: $bigDesktopWidth ) {
+                width: 237px;
+                height: 350px;
+            }
+            @media screen and (max-width: $bigDesktopWidth-desktopWidth  ) {
+                width: 211.5px;
+                height: 312px;
+            }
+            @media screen and (max-width: $desktopWidth ) {
+                width: 186px;
+                height: 274px;
+            }
+            @media screen and (max-width: $laptopWidth) {
+                width: 165px;
+                height: 243px;
+            }
+            @media screen and (max-width: $smDesktopWidth ) {
+                width: 144px;
+                height: 212px;
+            }
+            @media screen and (max-width: $smDesktopWidth ) {
+                width: 132px;
+                height: 194px;
+            }
+            @media screen and (max-width: $tableWidth ) {
+                width: 144px;
+                height: 212px;
+            }
+            @media screen and (max-width: $smPhoneWidth ) {
+                width: 132px;
+                height: 194px;
+            }
+        }
+
+        &__name{
+            font-weight: bold;
+        }
+
+        &__jobs{
+            font-weight: 300;
+        }
+
+        &__name,
+        &__jobs{
+            font-size: 36px;
+            line-height: 47px;
+            text-align: center;
+
+            @media screen and (max-width: $TVWidth-bigDesktopWidth) {
+                font-size: 29px;
+                line-height: 38px;
+            }
+            @media screen and (max-width: $bigDesktopWidth ) {
+                font-size: 22px;
+                line-height: 29px;
+            }
+            @media screen and (max-width: $desktopWidth ) {
+                font-size: 18px;
+                line-height: 23px;
+            }
+            @media screen and (max-width: $smDesktopWidth ) {
+                font-size: 16px;
+                line-height: 21px;
+            }
+            @media screen and (max-width: $smPhoneWidth ) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+
+

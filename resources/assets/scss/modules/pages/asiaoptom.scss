@@ -1,0 +1,955 @@
+.AsiaOptom-page{
+    .companyHero{
+        @media screen and (max-width: $noSliderDesktopWidth) {
+            height: 759px;
+        }
+        @media screen and (max-width: $tableWidth) {
+            height: 487px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            height: auto;
+        }
+
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width:  500px;
+            height: 485px;
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: $image-bg-top-asiaoptom;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                width:  257px;
+                height: 250px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                width:  232px;
+                height: 213px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                width:  211px;
+                height: 193px;
+            }
+            @media screen and (max-width: $tableWidth) {
+                width:  159px;
+                height: 145px;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                width:  107px;
+                height: 70.66px;
+                background-image: $image-bg-top-asiaoptom-small;
+            }
+        }
+        &:after{
+            content: ' ';
+            position: absolute;
+            z-index: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: $image-bg-bottom-asiaoptom;
+            max-width: 40%;
+
+            top: -80px;
+            right: -24px;
+            max-height: calc(100% + 79px);
+            width:  893px;
+            height: 1858px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                top: -60px;
+                right: 0;
+                max-height: calc(100% + 59px);
+                width:  582px;
+                height: 1210px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                width:  472px;
+                height: 983px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                top: -38px;
+                right: -12px;
+                max-height: calc(100% + 37px);
+                width:  382px;
+                height: 796px;
+                max-width: 43%;
+            }
+            @media screen and (max-width: $noSliderDesktopWidth) {
+                max-height: unset;
+            }
+            @media screen and (max-width: $tableWidth) {
+                top: -28px;
+                right: 0;
+                width: 247px;
+                height: 514px;
+                max-width: 34%;
+            }
+            @media screen and (max-width: $smtableWidth) {
+                display: none;
+            }
+        }
+        &__content{
+            padding-top: 240px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                padding-top: 50px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                padding-top: 52px;
+            }
+            @media screen and (max-width: $laptopWidth) {
+                padding-top: 135px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                padding-top: 70px;
+            }
+            @media screen and (max-width: $noSliderDesktopWidth) {
+                padding-top: 200px;
+            }
+            @media screen and (max-width: $tableWidth) {
+                padding-top: 150px;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                padding-top: 80px;
+            }
+            &__logo{
+                height: 219.2px;
+                width: 855px;
+
+                @media screen and (max-width: $bigDesktopWidth) {
+                    width: 650px;
+                    height: 167px;
+                }
+                @media screen and (max-width: $desktopWidth) {
+                    height: 122px;
+                    width: 475px;
+                }
+                @media screen and (max-width: $smDesktopWidth) {
+                    height: 90.24px;
+                    width: 352px;
+                }
+                @media screen and (max-width: $tableWidth) {
+                    height: 78px;
+                    width: 300px;
+                }
+                @media screen and (max-width: $phoneWidth) {
+                    height: 46px;
+                    width: 180px;
+                }
+            }
+            &__text{
+                width: 1200px;
+                @media screen and (max-width: $bigDesktopWidth) {
+                    width: 970px;
+                }
+                @media screen and (max-width: $desktopWidth) {
+                    width: 720px;
+                }
+                @media screen and (max-width: $smDesktopWidth) {
+                    width: 530px;
+                }
+                @media screen and (max-width: $tableWidth) {
+                    width: 481px;
+                }
+                @media screen and (max-width: $phoneWidth) {
+                    width: 215px;
+                }
+            }
+            &__link{
+                background-color: $color-asiaoptom;
+            }
+        }
+    }
+
+    .companyAbout {
+        &__hr{
+            margin-bottom: 40px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                margin-bottom: 15px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                margin-bottom: 10px;
+            }
+        }
+        &__content{
+            &__text{
+                max-width: 100%;
+                width: 630px;
+                margin-bottom: 140px;
+
+                @media screen and (max-width: $bigDesktopWidth) {
+                    width: 550px;
+                    margin-bottom: 80px;
+                }
+                @media screen and (max-width: $desktopWidth) {
+                    width: 500px;
+                }
+                @media screen and (max-width: $smDesktopWidth) {
+                    width: 400px;
+                }
+                @media screen and (max-width: $tableWidth) {
+                    margin-bottom: 40px;
+                }
+                @media screen and (max-width: $phoneWidth) {
+                    width: 250px;
+                }
+                @media screen and (max-width: $smPhoneWidth) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &__steps{
+            max-width: 2100px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                max-width: 1650px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                max-width: 1175px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                max-width: 824px;
+            }
+            &__element{
+                @media screen and (max-width: 590px) {
+                    width: 50%;
+
+                    &:nth-child(1),
+                    &:nth-child(2){
+                        margin-bottom: 40px;
+                    }
+
+                    &:nth-child(2) &__image{
+                        &:before{
+                            display: none;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: $phoneWidth) {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    width: 100%;
+
+                    &:not(:last-child){
+                        margin-bottom: 90px;
+                        &:before{
+                            left: 10px;
+                            top: calc(100% + 35px);
+                            z-index: 0;
+                            position: absolute;
+                            content: "";
+                            width: 50px;
+                            height: 30px;
+                            background-image: $image-steps-arrow;
+                            background-size: 100%;
+                            background-repeat: no-repeat;
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+
+                @media screen and (max-width: $smPhoneWidth) {
+                    &:not(:last-child){
+                        margin-bottom: 70px;
+                        &:before{
+                            top: calc(100% + 25px);
+                        }
+                    }
+                }
+
+                &__image{
+                    position: relative;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 200px;
+                    height: 200px;
+                    margin-bottom: 30px;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        width: 160px;
+                        height: 160px;
+                        margin-bottom: 20px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        width: 120px;
+                        height: 120px;
+                    }
+                    @media screen and (max-width: $smDesktopWidth) {
+                        width: 80px;
+                        height: 80px;
+                        margin-bottom: 15px;
+                    }
+                    @media screen and (max-width: $phoneWidth) {
+                        width: 70px;
+                        height: 70px;
+                        margin-right: 20px;
+                        margin-bottom: 0;
+                    }
+                    @media screen and (max-width: $smPhoneWidth) {
+                        margin-right: 10px;
+                    }
+                }
+                &:not(:last-child) &__image{
+                    &:before{
+                        top: 25%;
+                        left: 150%;
+                        z-index: 0;
+                        position: absolute;
+                        content: "";
+                        width: 120px;
+                        height: 70px;
+                        background-image: $image-steps-arrow;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+
+                        @media screen and (max-width: $bigDesktopWidth) {
+                            width: 100px;
+                            height: 60px;
+                        }
+                        @media screen and (max-width: $desktopWidth) {
+                            width: 80px;
+                            height: 48px;
+                        }
+                        @media screen and (max-width: $smDesktopWidth) {
+                            width: 50px;
+                            height: 30px;
+                        }
+                        @media screen and (max-width: $phoneWidth) {
+                            display: none;
+                        }
+
+                    }
+                }
+                &__text{
+                    max-width: 100%;
+                    width: 330px;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        width: 270px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        width: 215px;
+                    }
+                    @media screen and (max-width: $smDesktopWidth) {
+                        width: 170px;
+                    }
+                    @media screen and (max-width: $tableWidth) {
+                        width: 140px;
+                    }
+                    @media screen and (max-width: $phoneWidth) {
+                        width: 180px;
+                    }
+                }
+            }
+        }
+    }
+
+    .companyUseful{
+
+        &__hr{
+            margin-bottom: 160px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                margin-bottom: 80px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                margin-bottom: 60px;
+            }
+            @media screen and (max-width: $tableWidth) {
+                margin-bottom: 40px;
+            }
+        }
+        &__content{
+            max-width: 2010px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                max-width: 1490px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                max-width: 1070px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                max-width: 100%
+            }
+
+
+            &__elements{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            &__element{
+                display: flex;
+                align-items: center;
+                max-width: 50%;
+
+                @media screen and (max-width: $noSliderDesktopWidth) {
+                    width: 50%;
+                }
+                @media screen and (max-width: $bigPhoneWidth) {
+                    max-width: 100%;
+                    width: 100%;
+                }
+
+                &__image{
+                    width: 260px;
+                    height: 260px;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        width: 180px;
+                        height: 180px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        width: 140px;
+                        height: 140px;
+                    }
+                    @media screen and (max-width: $smDesktopWidth) {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    @media screen and (max-width: $tableWidth) {
+                        width: 80px;
+                        height: 80px;
+                    }
+                    @media screen and (max-width: $phoneWidth) {
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+                &__text{
+                    width: 520px;
+                    margin-left: 30px;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        width: 435px;
+                        margin-left: 40px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        width: 290px;
+                        margin-left: 30px;
+                    }
+                    @media screen and (max-width: $smDesktopWidth) {
+                        width: 240px;
+                        margin-left: 20px;
+                    }
+                    @media screen and (max-width: $phoneWidth) {
+                        width: 250px;
+                        max-width: 100%;
+                    }
+                    @media screen and (max-width: $smPhoneWidth) {
+                        width: 204px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            &__element:nth-child(1),
+            &__element:nth-child(2){
+                margin-bottom: 160px;
+
+                @media screen and (max-width: $bigDesktopWidth) {
+                    margin-bottom: 80px;
+                }
+                @media screen and (max-width: $desktopWidth) {
+                    margin-bottom: 60px;
+                }
+                @media screen and (max-width: $tableWidth) {
+                    margin-bottom: 40px;
+                }
+            }
+            &__element:not(:last-child){
+                @media screen and (max-width: 709px) {
+                    margin-bottom: 40px;
+                }
+                @media screen and (max-width: $phoneWidth) {
+                    margin-bottom: 40px;
+                }
+                @media screen and (max-width: $smPhoneWidth) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .companyOffer{
+        &:after{
+            content: ' ';
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+            width:  1905px;
+            height: 1312px;
+            max-height: 100%;
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: $image-asiaoptom-offer1-bg;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                width: 1435px;
+                height: 830px;
+                background-image: $image-asiaoptom-offer1-bg2;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                width: 1146px;
+                height: 663px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                width: 795px;
+                height: 535px;
+            }
+            @media screen and (max-width: $noSliderDesktopWidth) {
+                display: none;
+            }
+        }
+        &__title{
+            margin-bottom: 20px;
+            width: 850px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                margin-bottom: 15px;
+                width: 650px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                width: 480px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                margin-bottom: 10px;
+                width: 320px;
+            }
+            @media screen and (max-width: $tableWidth) {
+                width: 400px;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                width: 250px;
+            }
+        }
+        &__hr{
+            margin-bottom: 150px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                margin-bottom: 60px;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                margin-bottom: 40px;
+            }
+            @media screen and (max-width: $smPhoneWidth) {
+                margin-bottom: 30px;
+            }
+
+        }
+        &__content{
+            max-width: 2010px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                max-width: 1560px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                max-width: 1115px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                max-width: 814px;
+            }
+
+            &__elements{
+                justify-content: space-between;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-column-gap: 20px;
+                grid-row-gap: 150px;
+
+                @media screen and (max-width: $bigDesktopWidth) {
+                    grid-row-gap: 60px;
+                }
+                @media screen and (max-width: $bigPhoneWidth) {
+                    grid-template-columns: 1fr;
+                }
+                @media screen and (max-width: $phoneWidth) {
+                    grid-row-gap: 30px;
+                }
+            }
+            &__element{
+                @media screen and (max-width: $bigPhoneWidth) {
+                    display: flex;
+                    align-items: center;
+                }
+                &__image{
+                    width: 120px;
+                    height: 120px;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    margin-bottom: 25px;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        width: 100px;
+                        height: 100px;
+                        margin-bottom: 20px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        width: 80px;
+                        height: 80px;
+                        margin-bottom: 15px;
+                    }
+                    @media screen and (max-width: $smDesktopWidth) {
+                        width: 60px;
+                        height: 60px;
+                        margin-bottom: 10px;
+                    }
+                    @media screen and (max-width: $bigPhoneWidth) {
+                        margin-bottom: 0;
+                        margin-right: 20px;
+                    }
+
+                }
+                &__text{
+                    max-width: 430px;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        max-width: 350px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        max-width: 230px;
+                    }
+                    @media screen and (max-width: $smDesktopWidth) {
+                        max-width: 182px;
+                    }
+                    @media screen and (max-width: $phoneWidth) {
+                        max-width: 260px;
+                    }
+                    @media screen and (max-width: $smPhoneWidth) {
+                        max-width: 204px;
+                    }
+                }
+            }
+        }
+    }
+
+    .companyOffer2{
+        &__content{
+            max-width: 2010px;
+            margin-top: 160px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                max-width: 1560px;
+                margin-top: 90px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                max-width: 1115px;
+                margin-top: 80px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                max-width: 814px;
+                margin-top: 60px;
+            }
+        }
+        &:after{
+            content: ' ';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            width:  100%;
+            height: 1123px;
+            max-height: 100%;
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: $image-asiaoptom-offer2-bg;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                height: 814.5px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                height: 671px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                height: 530px;
+            }
+            @media screen and (max-width: $noSliderDesktopWidth) {
+                display: none;
+            }
+        }
+    }
+
+    .companyChooseUs{
+
+        @media screen and (max-width: $bigPhoneWidth) {
+            margin-bottom: 80px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            margin-bottom: 20px;
+        }
+
+        &__hr{
+            max-width: 55%;
+
+            @media screen and (max-width: $bigPhoneWidth) {
+                margin-bottom: 10px;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                width: 100%;
+            }
+        }
+        &__content{
+            max-width: 960px;
+            float: right;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                max-width: 700px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                max-width: 490px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                max-width: 350px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                max-width: 350px;
+            }
+            @media screen and (max-width: $noSliderDesktopWidth) {
+                margin-bottom: 80px;
+            }
+            @media screen and (max-width: $tableWidth) {
+                max-width: 318px;
+            }
+            @media screen and (max-width: $bigPhoneWidth) {
+                float: unset;
+                margin-bottom: 0;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                width: 100%;
+            }
+
+            &__elements{
+                &__text{
+                    h4{
+                        font-size: 55px;
+                        line-height: 61px;
+
+                        @media screen and (max-width: $bigDesktopWidth) {
+                            font-size: 36px;
+                            line-height: 40px;
+                        }
+                        @media screen and (max-width: $desktopWidth) {
+                            font-size: 29px;
+                            line-height: 32px;
+                        }
+                        @media screen and (max-width: $smDesktopWidth) {
+                            font-size: 22px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+                &__text:first-child{
+                    margin-bottom: 120px;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        margin-bottom: 80px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        margin-bottom: 60px;
+                    }
+                    @media screen and (max-width: $phoneWidth) {
+                        margin-bottom: 40px;
+                    }
+                }
+                &__text:nth-child(2){
+                    margin-bottom: 70px;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        margin-bottom: 60px;
+                    }
+                    @media screen and (max-width: $phoneWidth) {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .companyChooseUsTable{
+        @media screen and (max-width: $noSliderDesktopWidth) {
+            margin-bottom: 80px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            margin-bottom: 60px;
+        }
+        .table{
+            @media screen and (max-width: $bigPhoneWidth) {
+                display: none;
+            }
+        }
+
+        .accordion{
+            display: none;
+            @media screen and (max-width: $bigPhoneWidth) {
+                display: block;
+            }
+
+            &__button{
+                background-color: $color-white;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 15px;
+                cursor: pointer;
+                padding: 18px 10px;
+                width: 100%;
+                height: 50px;
+                border: none;
+                text-align: left;
+                outline: none;
+                transition: 0.4s;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &:after{
+                    content: '';
+                    background-image: $image-asiaoptom-plus;
+                    height: 16px;
+                    width: 16px;
+                }
+                &.active:after {
+                    background-image: $image-asiaoptom-minus;
+                    height: 2px;
+                }
+            }
+
+            &__panel{
+                display: none;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+            }
+
+            &__button:nth-child(4n+1),
+            &__panel:nth-child(4n+2){
+                background-color: $color-table-tr;
+            }
+        }
+
+        .container{
+            padding-top: 164px;
+            padding-bottom: 150px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                padding-top: 117px;
+                padding-bottom: 60px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                padding-top: 94px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                padding-top: 102px;
+            }
+            @media screen and (max-width: $noSliderDesktopWidth) {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            height: 100%;
+            max-width: 2089px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                max-width: 1625px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                max-width: 100%;
+            }
+
+        }
+
+        th, td {
+            text-align: left;
+            padding: 43px 0;
+            vertical-align: middle;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                padding: 25px 0;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                padding: 22px 0;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                padding: 16px 0;
+            }
+
+        }
+        td:first-child{
+            padding-left: 50px;
+            max-width: calc(50px + 580px + 160px);
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                max-width: calc(50px + 420px + 120px);
+            }
+            @media screen and (max-width: $desktopWidth) {
+                max-width: calc(50px + 280px + 110px);
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                padding-left: 30px;
+                max-width: calc(30px + 230px + 50px);
+            }
+            @media screen and (max-width: $tableWidth) {
+                padding-left: 20px;
+                max-width: calc(20px + 230px + 47px);
+            }
+            @media screen and (max-width: $bigPhoneWidth) {
+                padding-left: 10px;
+                max-width: calc(10px + 230px + 60px);
+            }
+        }
+        td:not(:first-child){
+            font-weight: 500;
+        }
+        td:not(:last-child){
+            padding-right: 160px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                padding-right: 120px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                padding-right: 110px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                padding-right: 50px;
+            }
+            @media screen and (max-width: $tableWidth) {
+                padding-right: 47px;
+            }
+            @media screen and (max-width: $bigPhoneWidth) {
+                padding-right: 60px;
+            }
+        }
+        td:last-child{
+            @media screen and (max-width: $bigPhoneWidth) {
+                padding-right: 10px;
+            }
+        }
+
+        .table tr:nth-child(even) {
+            background-color: $color-table-tr;
+        }
+        .red{
+            color: $color-red-for-table;
+        }
+    }
+}
+
+

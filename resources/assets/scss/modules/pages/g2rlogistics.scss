@@ -1,0 +1,631 @@
+.G2Rlogistics-page{
+    .companyHero {
+        @media screen and (max-width: $noSliderDesktopWidth) {
+            height: 789px;
+        }
+        @media screen and (max-width: $tableWidth) {
+            height: 526px
+        }
+        @media screen and (max-width: $phoneWidth) {
+            height: auto;
+        }
+
+        &:before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: $image-bg-top-g2rlogistics;
+
+            top: -172.9px;
+            left: -60.86px;
+            width: 582.86px;
+            height: 531.76px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                top: -127px;
+                left: -75px;
+                width: 366px;
+                height: 344px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                top: -93px;
+                left: -22px;
+                width: 272px;
+                height: 249px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                top: -66px;
+                left: -15px;
+                width: 227px;
+                height: 210px;
+            }
+            @media screen and (max-width: $tableWidth) {
+                top: -61px;
+                left: -9px;
+                width: 199px;
+                height: 184px;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                top: -55px;
+                left: -7px;
+                width: 141px;
+                height: 130px;
+            }
+            @media screen and (max-width: $smPhoneWidth) {
+                top: -46px;
+                left: -2px;
+                width: 117px;
+                height: 107px;
+            }
+
+        }
+        &:after{
+            content: ' ';
+            position: absolute;
+            z-index: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: $image-bg-bottom-g2rlogistics;
+
+            max-height: calc(100% + 508px);
+            top: -508px;
+            right: -265px;
+            width: 1505px;
+            height: 2034px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                top: -344px;
+                right: -179px;
+                width: 1050px;
+                height: calc(100% + 344px + 90px);
+            }
+            @media screen and (max-width: $desktopWidth) {
+                top: -279px;
+                right: -148px;
+                width: 846px;
+                height: calc(100% + 279px + 60px);
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                top: -218px;
+                right: -171px;
+                width: 683px;
+                height: calc(100% + 218px + 60px);
+            }
+            @media screen and (max-width: $noSliderDesktopWidth) {
+                height: calc(100% + 218px);
+            }
+            @media screen and (max-width: $tableWidth) {
+                background-size: contain;
+                top: -166px;
+                right: -144px;
+                width: 511px;
+                height: 710px;
+            }
+            @media screen and (max-width: $smtableWidth) {
+                background-image: $image-bg-bottom-g2rlogistics-small;
+                top: -74px;
+                right: -77px;
+                width: 269px;
+                height: 149px;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                top: -64px;
+                right: -47px;
+                width: 220px;
+                height: 121px;
+            }
+        }
+        &__content{
+            padding-top: 160px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                padding-top: 143px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                padding-top: 120px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                padding-top: 70px;
+            }
+            @media screen and (max-width: $noSliderDesktopWidth) {
+                padding-top: 200px;
+            }
+            @media screen and (max-width: $tableWidth) {
+                padding-top: 150px;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                padding-top: 100px;
+
+            }
+            &__logo{
+                width: 1398px;
+                height: 218px;
+
+                @media screen and (max-width: $bigDesktopWidth) {
+                    width: 1058px;
+                    height: 165px;
+                }
+                @media screen and (max-width: $desktopWidth) {
+                    width: 833.67px;
+                    height: 130px;
+                }
+                @media screen and (max-width: $smDesktopWidth) {
+                    width: 577px;
+                    height: 90px;
+                }
+                @media screen and (max-width: $tableWidth) {
+                    width: 449px;
+                    height: 70px;
+                }
+                @media screen and (max-width: $phoneWidth) {
+                    width: 295px;
+                    height: 46px;
+                }
+                @media screen and (max-width: $phoneWidth) {
+                    width: 284px;
+                    height: 44px;
+                }
+            }
+            &__text{
+                width: 800px;
+                @media screen and (max-width: $desktopWidth) {
+                    width: 600px;
+                }
+                @media screen and (max-width: $smDesktopWidth) {
+                    width: 400px;
+                }
+                @media screen and (max-width: $phoneWidth) {
+                    width: 215px;
+                }
+            }
+            &__link{
+                background-color: $color-g2rlogistics-second;
+            }
+        }
+    }
+
+    .companyAbout{
+        background-color: $color-white;
+        &__hr{
+            margin-bottom: 40px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                margin-bottom: 25px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                margin-bottom: 15px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                margin-bottom: 10px;
+            }
+        }
+        &__content{
+            &__text{
+                max-width: 100%;
+                width: 850px;
+
+                @media screen and (max-width: $bigDesktopWidth) {
+                    width: 680px;
+                }
+                @media screen and (max-width: $desktopWidth) {
+                    width: 430px;
+                }
+                @media screen and (max-width: $smDesktopWidth) {
+                    width: 400px;
+                }
+                @media screen and (max-width: $noSliderDesktopWidth) {
+                    margin-bottom: 40px;
+                }
+
+                p:first-child{
+                    margin-bottom: 60px;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        margin-bottom: 80px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        margin-bottom: 40px;
+                    }
+                    @media screen and (max-width: $smDesktopWidth) {
+                        margin-bottom: 30px;
+                    }
+                    @media screen and (max-width: $tableWidth) {
+                        margin-bottom: 40px;
+                    }
+                    @media screen and (max-width: $phoneWidth) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            &__image{
+                content: "";
+                position: absolute;
+                background-position: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                max-width: 100%;
+
+                bottom: 0;
+                right: 180px;
+                width: 1469px;
+                height: 682px;
+
+                @media screen and (max-width: $bigDesktopWidth) {
+                    right: 80px;
+                    width: 970px;
+                    height: 450px;
+                }
+                @media screen and (max-width: $desktopWidth) {
+                    right: 100px;
+                    width: 762px;
+                    height: 354px;
+                }
+                @media screen and (max-width: $smDesktopWidth) {
+                    width: 609px;
+                    height: 283px;
+                }
+                @media screen and (max-width: $noSliderDesktopWidth) {
+                    position: static;
+                    margin-right: 0;
+                    margin-left: auto;
+                }
+                @media screen and (max-width: $phoneWidth) {
+                    height: 159px;
+                }
+                @media screen and (max-width: $smPhoneWidth) {
+                    height: 133px;
+                }
+            }
+        }
+    }
+
+    .companyUseful{
+        &__hr{
+            margin-bottom: 120px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                margin-bottom: 80px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                margin-bottom: 60px;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                margin-bottom: 20px;
+            }
+            @media screen and (max-width: $smPhoneWidth) {
+                margin-bottom: 30px;
+            }
+        }
+        &__content{
+            max-width: 2160px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                max-width: 1660px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                max-width: 1165px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                max-width: 810px;
+            }
+
+            &__elements{
+                justify-content: space-between;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-column-gap: 20px;
+                grid-row-gap: 120px;
+
+                @media screen and (max-width: $bigDesktopWidth) {
+                    grid-row-gap: 80px;
+                }
+                @media screen and (max-width: $desktopWidth) {
+                    grid-row-gap: 60px;
+                }
+                @media screen and (max-width: $bigPhoneWidth) {
+                    grid-template-columns: 1fr 1fr;
+                    grid-row-gap: 25px;
+                }
+
+            }
+            &__element{
+                display: flex;
+                align-items: center;
+
+                @media screen and (max-width: $tableWidth) {
+                    display: block;
+                }
+
+                &__image{
+                    width: 250px;
+                    height: 250px;
+                    margin-right: 20px;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        width: 180px;
+                        height: 180px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        width: 140px;
+                        height: 140px;
+                        margin-right: 15px;
+                    }
+                    @media screen and (max-width: $smDesktopWidth) {
+                        width: 80px;
+                        height: 80px;
+                        margin-right: 10px;
+                    }
+                    @media screen and (max-width: $tableWidth) {
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+                &__text{
+                    max-width: 350px;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        max-width: 280px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        max-width: 180px;
+                    }
+                    @media screen and (max-width: $smDesktopWidth) {
+                        max-width: 140px;
+                    }
+                    @media screen and (max-width: $tableWidth) {
+                        max-width: 200px;
+                    }
+                    @media screen and (max-width: $phoneWidth) {
+                        max-width: 150px;
+                    }
+                    @media screen and (max-width: $smPhoneWidth) {
+                        max-width: 132px;
+                    }
+                }
+            }
+        }
+    }
+
+    .companyOffer{
+        &:after{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            background-position: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: $image-g2rlogistics-offer-bg;
+            max-height: 90%;
+            right: 0;
+            top: 0;
+            width: 1343px;
+            height: 1232px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                width: 993px;
+                height: 783px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                width: 773px;
+                height: 664px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                width: 514px;
+                height: 503px;
+            }
+            @media screen and (max-width: $noSliderDesktopWidth) {
+                display: none;
+            }
+
+        }
+        &__hr{
+            margin-bottom: 160px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                margin-bottom: 80px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                margin-bottom: 60px;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                margin-bottom: 40px;
+            }
+        }
+        &__content{
+            max-width: 2010px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                max-width: 1550px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                max-width: 1090px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                max-width: 768px;
+            }
+
+            &__elements{
+                justify-content: space-between;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-column-gap: 20px;
+                grid-row-gap: 235px;
+
+                @media screen and (max-width: $bigDesktopWidth) {
+                    grid-row-gap: 80px;
+                }
+                @media screen and (max-width: $smDesktopWidth) {
+                    grid-row-gap: 60px;
+                }
+                @media screen and (max-width: $bigPhoneWidth) {
+                    grid-template-columns: 1fr;
+                    grid-row-gap: 30px;
+                }
+            }
+            &__element{
+                @media screen and (max-width: $bigPhoneWidth) {
+                    display: flex;
+                    align-items: center;
+                }
+                &__image{
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 120px;
+                    height: 120px;
+                    margin-bottom: 25px;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        width: 100px;
+                        height: 100px;
+                        margin-bottom: 20px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        width: 80px;
+                        height: 80px;
+                        margin-bottom: 15px;
+                    }
+                    @media screen and (max-width: $smDesktopWidth) {
+                        width: 60px;
+                        height: 60px;
+                        margin-bottom: 10px;
+                    }
+                    @media screen and (max-width: $bigPhoneWidth) {
+                        margin-bottom: 0;
+                        margin-right: 20px;
+                    }
+                }
+                &__text{
+                    max-width: 100%;
+                    width: 470px;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        width: 350px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        width: 230px;
+                    }
+                    @media screen and (max-width: $smDesktopWidth) {
+                        width: 182px;
+                    }
+                    @media screen and (max-width: $bigPhoneWidth) {
+                        width: 260px;
+                    }
+                    @media screen and (max-width: $smPhoneWidth) {
+                        width: 204px;
+                    }
+                }
+            }
+        }
+    }
+
+    .companyChooseUs{
+        &__hr{
+            margin-bottom: 80px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                margin-bottom: 60px;
+            }
+            @media screen and (max-width: $laptopWidth) {
+                margin-bottom: 40px;
+            }
+            @media screen and (max-width: $tableWidth) {
+                margin-bottom: 60px;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                margin-bottom: 27px;
+            }
+        }
+        &__content{
+            max-width: 2040px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                max-width: 1620px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                max-width: 1140px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                max-width: 780px;
+            }
+
+            &__elements{
+                justify-content: space-between;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-column-gap: 20px;
+                grid-row-gap: 80px;
+
+                @media screen and (max-width: $bigDesktopWidth) {
+                    grid-row-gap: 60px;
+                }
+                @media screen and (max-width: $laptopWidth) {
+                    grid-row-gap: 40px;
+                }
+                @media screen and (max-width: $tableWidth) {
+                    grid-row-gap: 60px;
+                }
+                @media screen and (max-width: $bigPhoneWidth) {
+                    grid-template-columns: 1fr 1fr;
+                    grid-row-gap: 40px;
+                }
+                @media screen and (max-width: $smPhoneWidth) {
+                    grid-row-gap: 25px;
+                }
+            }
+            &__element{
+                &__image{
+                    width: 250px;
+                    height: 250px;
+                    margin-bottom: 20px;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        width: 140px;
+                        height: 140px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        width: 100px;
+                        height: 100px;
+                        margin-bottom: 15px;
+                    }
+                    @media screen and (max-width: $smDesktopWidth) {
+                        width: 80px;
+                        height: 80px;
+                    }
+                    @media screen and (max-width: $tableWidth) {
+                        margin-bottom: 10px;
+                    }
+                }
+                &__text{
+                    max-width: 500px;
+
+                    @media screen and (max-width: $bigDesktopWidth) {
+                        max-width: 420px;
+                    }
+                    @media screen and (max-width: $desktopWidth) {
+                        max-width: 280px;
+                    }
+                    @media screen and (max-width: $smDesktopWidth) {
+                        max-width: 200px;
+                    }
+                    @media screen and (max-width: $phoneWidth) {
+                        max-width: 150px;
+                    }
+                    @media screen and (max-width: $smPhoneWidth) {
+                        max-width: 132px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

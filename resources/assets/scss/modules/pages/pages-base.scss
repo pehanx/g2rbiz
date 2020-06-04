@@ -1,0 +1,257 @@
+.companyHero{
+    .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 180px;
+
+        @media screen and (max-width: $bigDesktopWidth) {
+            padding: 0 100px;
+        }
+        @media screen and (max-width: $noSliderDesktopWidth) {
+            padding: 0 15px;
+            display: block;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            padding: 0 18px;
+        }
+    }
+    &__content{
+        padding-top: 240px;
+
+        @media screen and (max-width: $bigDesktopWidth) {
+            padding-top: 50px;
+        }
+        @media screen and (max-width: $desktopWidth) {
+            padding-top: 40px;
+        }
+        @media screen and (max-width: $smDesktopWidth) {
+            padding-top: 70px;
+        }
+        @media screen and (max-width: $tableWidth) {
+            padding-top: 150px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            padding-top: 80px;
+        }
+
+        &__logo{
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 60px;
+            max-width: 100%;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                margin-bottom: 50px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                margin-bottom: 40px;
+            }
+            @media screen and (max-width: $smPhoneWidth) {
+                margin-bottom: 30px;
+            }
+        }
+        &__text{
+            max-width: 100%;
+            margin-bottom: 60px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                margin-bottom: 50px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                margin-bottom: 40px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                max-width: 70%;
+            }
+            @media screen and (max-width: $tableWidth) {
+                max-width: 100%;
+            }
+            @media screen and (max-width: $smPhoneWidth) {
+                margin-bottom: 30px;
+            }
+
+            p{
+                font-size: 70px;
+                line-height: 91px;
+
+                @media screen and (max-width: $bigDesktopWidth) {
+                    font-size: 55px;
+                    line-height: 71px;
+                }
+                @media screen and (max-width: $desktopWidth) {
+                    font-size: 42px;
+                    line-height: 55px;
+                }
+                @media screen and (max-width: $smDesktopWidth) {
+                    font-size: 30px;
+                    line-height: 39px;
+                }
+                @media screen and (max-width: $tableWidth) {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+                @media screen and (max-width: $phoneWidth) {
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+
+            }
+        }
+        &__link{
+            display: flex;
+            align-items: center;
+            width: max-content;
+            transition: .4s;
+            color: $color-white;
+
+            height: 100px;
+            border-radius: 15px;
+            font-size: 36px;
+            line-height: 47px;
+            padding: 0 40px;
+
+            @media screen and (max-width: $bigDesktopWidth) {
+                height: 80px;
+                border-radius: 10px;
+                font-size: 24px;
+                line-height: 31px;
+            }
+            @media screen and (max-width: $desktopWidth) {
+                height: 60px;
+                font-size: 20px;
+                line-height: 26px;
+            }
+            @media screen and (max-width: $smDesktopWidth) {
+                height: 50px;
+                border-radius: 7px;
+                font-size: 16px;
+                line-height: 21px;
+            }
+            @media screen and (max-width: $tableWidth) {
+                font-size: 16px;
+                line-height: 21px;
+            }
+
+            &:hover{
+                cursor: pointer;
+                opacity: .7;
+            }
+
+            &-g2rmachine{
+                background-color: $color-g2rmachine;
+            }
+        }
+    }
+}
+
+.company{
+    .container{
+        padding: 240px 180px;
+
+        @media screen and (max-width: $bigDesktopWidth) {
+            padding: 160px 100px;
+        }
+        @media screen and (max-width: $desktopWidth) {
+            padding: 140px 100px;
+        }
+        @media screen and (max-width: $laptopWidth) {
+            padding: 100px 100px;
+        }
+        @media screen and (max-width: $smDesktopWidth) {
+            padding: 130px 100px;
+        }
+        @media screen and (max-width: $noSliderDesktopWidth) {
+            padding: 0 15px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            padding: 0 18px;
+        }
+    }
+
+    &__title{
+        max-width: 100%;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: $bigDesktopWidth) {
+            margin-bottom: 25px;
+        }
+        @media screen and (max-width: $desktopWidth) {
+            margin-bottom: 15px;
+        }
+        @media screen and (max-width: $smDesktopWidth) {
+            margin-bottom: 10px;
+        }
+    }
+
+    h2{
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 65px;
+        line-height: 84px;
+
+        @media screen and (max-width: $bigDesktopWidth) {
+            font-size: 50px;
+            line-height: 65px;
+        }
+        @media screen and (max-width: $desktopWidth) {
+            font-size: 36px;
+            line-height: 47px;
+        }
+        @media screen and (max-width: $smDesktopWidth) {
+            font-size: 24px;
+            line-height: 31px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+
+    .hr{
+        width: 1200px;
+        border: 3px solid $color-text;
+
+        @media screen and (max-width: $bigDesktopWidth) {
+            width: 900px;
+        }
+        @media screen and (max-width: $desktopWidth) {
+            border-width: 2px;
+            width: 650px;
+        }
+        @media screen and (max-width: $smDesktopWidth) {
+            border-width: 1px;
+            width: 430px;
+        }
+        @media screen and (max-width: $tableWidth) {
+            width: 400px;
+            max-width: 100%;
+        }
+    }
+
+    p, th, td{
+        word-break: break-word;
+        font-size: 36px;
+        line-height: 40px;
+
+        @media screen and (max-width: $bigDesktopWidth) {
+            font-size: 30px;
+            line-height: 33px;
+        }
+        @media screen and (max-width: $desktopWidth) {
+            font-size: 20px;
+            line-height: 22px;
+        }
+        @media screen and (max-width: $smDesktopWidth) {
+            font-size: 16px;
+            line-height: 18px;
+        }
+        @media screen and (max-width: $phoneWidth) {
+            font-size: 14px;
+            line-height: 15px;
+        }
+    }
+
+}
+
+
